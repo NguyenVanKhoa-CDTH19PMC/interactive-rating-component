@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 20%);
+    --Dark-Blue: hsl(213, 19%, 14%);
+    --Very-Dark-Blue:hsl(216, 12%, 8%);
+}
+body{
+    font-family: 'Overpass', sans-serif;
+height: 100vh;
+    background:var(--Very-Dark-Blue) ;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+main{
+  flex-grow: 1;
+    
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.card{
+    max-width: 330px;
+    padding: 30px;
+    border-radius: 25px;
+    color: white;
+    background: var(--Dark-Blue);
+}
+#thank-card{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center ;
+}
+.thank-card--illus{
+    width: 150px;
+}
+.card-description{
+    font-size: 15px;
+    color: var(--Light-Grey);
+}
+.cart-note{
+    font-size: 13px;
+    background: var(--Medium-Grey);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--Orange);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.rating{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-item,.card--icon{
+    background: var(--Medium-Grey);
+    color: var(--Light-Grey);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+        transition: color 0.1s ease-in-out;
+}
+.rating-item-selected{
+    background: var(--Orange);
+    color: white;
+}
+.rating-item:hover{
+    background: var(--Light-Grey);
+    color: white;
+}
+button {
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    height: 40px;
+    border-radius: 40px;
+    color: white;
+    background: var(--Orange);
+    text-transform: uppercase;
+
+}
+button:hover{
+    background: white;
+    color: var(--Orange);
+}
+footer{
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+}
+a{
+    color: var(--Orange);
+    text-decoration: none;
+}
